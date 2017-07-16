@@ -13,6 +13,6 @@ data <- cbind(datetime,data)
 rm(datetime,head)
 
 ## plot2
-png("./data/Plot2.png")
-with(data,plot(datetime,Global_active_power,type="l",xlab=""))
+png("./data/plot2.png")
+with(data,plot(datetime,Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)"))
 dev.off()

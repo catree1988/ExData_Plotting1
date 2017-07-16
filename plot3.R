@@ -13,7 +13,7 @@ data <- cbind(datetime,data)
 rm(datetime,head)
 
 ## plot3
-png("./data/Plot3.png")
+png("./data/plot3.png")
 with(data,plot(datetime,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering"))
 with(data,lines(datetime,Sub_metering_2,col="red"))
 with(data,lines(datetime,Sub_metering_3,col="blue"))

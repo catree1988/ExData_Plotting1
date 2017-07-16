@@ -13,9 +13,9 @@ data <- cbind(datetime,data)
 rm(datetime,head)
 
 ## plot4
-png("./data/Plot4.png")
+png("./data/plot4.png")
 par(mfcol=c(2,2))
-with(data,plot(datetime,Global_active_power,type="l",xlab=""))
+with(data,plot(datetime,Global_active_power,type="l",xlab="",ylab="Global Active Power (kilowatts)"))
 with(data,plot(datetime,Sub_metering_1,type="l",xlab="",ylab="Energy sub metering"))
 with(data,lines(datetime,Sub_metering_2,col="red"))
 with(data,lines(datetime,Sub_metering_3,col="blue"))

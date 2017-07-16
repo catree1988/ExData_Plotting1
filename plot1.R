@@ -9,6 +9,6 @@ head <- names(read.table("./data/household_power_consumption.txt",header = TRUE,
 data <- read.table("./data/household_power_consumption.txt", nrows=2880,sep = ";",skip=66637,col.names=head)
 
 ## plot1
-png("./data/Plot1.png")
+png("./data/plot1.png")
 hist(data$Global_active_power,xlab="Global Active Power (killowatts)",main="Global Active Power",col="red")
 dev.off()
